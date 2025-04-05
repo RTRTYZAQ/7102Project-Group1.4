@@ -1,0 +1,19 @@
+Field,Description
+Distributor,Name of Wholesaler
+Customer Name,Name of customer
+City,Customer's city
+Country,Customer's country
+Latitude,Customer's Geo Latitude
+Longitude,Customer's Geo Longitude
+Channel,"Class of buyer (Hospital, Pharmacy)"
+Sub-channel,"Sector of buyer (Government, Private etc)"
+Product Name,Name of Drug
+Product Class,"Class of Drug (Antibiotics, etc)"
+Quantity,Quantity purchased
+Price,Price product was sold for
+Sales,Amount made from sale
+Month,Month sale was made
+Year,Year sale was made
+Name of Sales Rep,Name of Sales rep who facilitated the sale
+Manager,Sales rep's Manager Name
+Sales Team,Sale rep's team
