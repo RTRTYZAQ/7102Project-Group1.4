@@ -1,0 +1,1 @@
+bert_class_prediction_best_model.pth: https://drive.google.com/file/d/1DudeAFK9xYfNgwfr702lPl77WCiEZ8WG/view?usp=sharing
