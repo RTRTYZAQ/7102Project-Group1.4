@@ -1,0 +1,438 @@
+{
+    "year_distribution": {
+        "2017": {
+            "count": 8219,
+            "percentage": 26.426
+        },
+        "2018": {
+            "count": 7894,
+            "percentage": 25.381
+        },
+        "2019": {
+            "count": 7574,
+            "percentage": 24.352
+        },
+        "2020": {
+            "count": 7415,
+            "percentage": 23.841
+        }
+    },
+    "month_distribution": {
+        "April": {
+            "count": 2324,
+            "percentage": 7.472
+        },
+        "August": {
+            "count": 2666,
+            "percentage": 8.572
+        },
+        "December": {
+            "count": 2120,
+            "percentage": 6.816
+        },
+        "February": {
+            "count": 2600,
+            "percentage": 8.36
+        },
+        "January": {
+            "count": 2159,
+            "percentage": 6.942
+        },
+        "July": {
+            "count": 2945,
+            "percentage": 9.469
+        },
+        "June": {
+            "count": 2759,
+            "percentage": 8.871
+        },
+        "March": {
+            "count": 2764,
+            "percentage": 8.887
+        },
+        "May": {
+            "count": 2617,
+            "percentage": 8.414
+        },
+        "November": {
+            "count": 2871,
+            "percentage": 9.231
+        },
+        "October": {
+            "count": 2668,
+            "percentage": 8.578
+        },
+        "September": {
+            "count": 2609,
+            "percentage": 8.389
+        }
+    },
+    "sales_summary": {
+        "sales_summation": 1652047360.54387,
+        "sales_mean": 53117.078,
+        "sales_std": 325709.745,
+        "sales_min": -2433600.0,
+        "sales_max": 18402480.0,
+        "sales_percentiles": {
+            "25%": 2226.0,
+            "50%": 7038.0,
+            "75%": 24837.5
+        }
+    },
+    "quantity_summary": {
+        "quantity_summation": 3902860.8570175,
+        "quantity_mean": 125.486,
+        "quantity_std": 715.204,
+        "quantity_min": -3190.0,
+        "quantity_max": 33520.0,
+        "quantity_percentiles": {
+            "25%": 6.0,
+            "50%": 20.0,
+            "75%": 60.0
+        }
+    },
+    "price_summary": {
+        "price_avg": 420.306,
+        "price_std": 214.731,
+        "price_min": 33,
+        "price_max": 780,
+        "price_percentiles": {
+            "25%": 220.0,
+            "50%": 448.0,
+            "75%": 591.0
+        }
+    },
+    "distributor_distribution": {
+        "Gerlach LLC": {
+            "count": 16196,
+            "percentage": 52.074
+        },
+        "Koss": {
+            "count": 8498,
+            "percentage": 27.323
+        },
+        "Erdman": {
+            "count": 3827,
+            "percentage": 12.305
+        },
+        "Kozey-Emmerich": {
+            "count": 655,
+            "percentage": 2.106
+        },
+        "Welch-Langworth": {
+            "count": 436,
+            "percentage": 1.402
+        },
+        "Daugherty-Rempel": {
+            "count": 268,
+            "percentage": 0.862
+        },
+        "Rohan and Sons": {
+            "count": 227,
+            "percentage": 0.73
+        },
+        "Romaguera-Fay": {
+            "count": 204,
+            "percentage": 0.656
+        },
+        "Crist Inc": {
+            "count": 183,
+            "percentage": 0.588
+        },
+        "Lockman": {
+            "count": 147,
+            "percentage": 0.473
+        },
+        "Lesch": {
+            "count": 141,
+            "percentage": 0.453
+        },
+        "Gleason": {
+            "count": 105,
+            "percentage": 0.338
+        },
+        "Schaefer LLC": {
+            "count": 85,
+            "percentage": 0.273
+        },
+        "Hansen Group Pharm": {
+            "count": 52,
+            "percentage": 0.167
+        },
+        "Nader-Gaylord": {
+            "count": 46,
+            "percentage": 0.148
+        },
+        "Bashirian-Kassulke": {
+            "count": 32,
+            "percentage": 0.103
+        }
+    },
+    "channel_subchannel_distribution": {
+        "Hospital": {
+            "Government": {
+                "count": 8242,
+                "percentage": 54.71
+            },
+            "Private": {
+                "count": 6823,
+                "percentage": 45.29
+            }
+        },
+        "Pharmacy": {
+            "Institution": {
+                "count": 7630,
+                "percentage": 47.577
+            },
+            "Retail": {
+                "count": 8407,
+                "percentage": 52.423
+            }
+        }
+    },
+    "sales_rep_distribution": {
+        "Erica Jones": {
+            "Sales Team": "Alfa",
+            "count": 2464,
+            "percentage": 7.922,
+            "performance_rank": 1
+        },
+        "Alan Ray": {
+            "Sales Team": "Alfa",
+            "count": 2455,
+            "percentage": 7.893,
+            "performance_rank": 2
+        },
+        "Sheila Stones": {
+            "Sales Team": "Delta",
+            "count": 2434,
+            "percentage": 7.826,
+            "performance_rank": 3
+        },
+        "Thompson Crawford": {
+            "Sales Team": "Alfa",
+            "count": 2417,
+            "percentage": 7.771,
+            "performance_rank": 4
+        },
+        "Steve Pepple": {
+            "Sales Team": "Bravo",
+            "count": 2412,
+            "percentage": 7.755,
+            "performance_rank": 5
+        },
+        "Anne Wu": {
+            "Sales Team": "Delta",
+            "count": 2407,
+            "percentage": 7.739,
+            "performance_rank": 6
+        },
+        "Stella Given": {
+            "Sales Team": "Charlie",
+            "count": 2404,
+            "percentage": 7.729,
+            "performance_rank": 7
+        },
+        "Mary Gerrard": {
+            "Sales Team": "Delta",
+            "count": 2382,
+            "percentage": 7.659,
+            "performance_rank": 8
+        },
+        "Abigail Thompson": {
+            "Sales Team": "Bravo",
+            "count": 2377,
+            "percentage": 7.643,
+            "performance_rank": 9
+        },
+        "Morris Garcia": {
+            "Sales Team": "Bravo",
+            "count": 2369,
+            "percentage": 7.617,
+            "performance_rank": 10
+        },
+        "Jessica Smith": {
+            "Sales Team": "Delta",
+            "count": 2364,
+            "percentage": 7.601,
+            "performance_rank": 11
+        },
+        "Daniel Gates": {
+            "Sales Team": "Charlie",
+            "count": 2341,
+            "percentage": 7.527,
+            "performance_rank": 12
+        },
+        "Jimmy Grey": {
+            "Sales Team": "Charlie",
+            "count": 2276,
+            "percentage": 7.318,
+            "performance_rank": 13
+        }
+    },
+    "sales_team_distribution": {
+        "Delta": {
+            "manager": "Britanny Bold",
+            "count": 9587,
+            "percentage": 30.824
+        },
+        "Alfa": {
+            "manager": "James Goodwill",
+            "count": 7336,
+            "percentage": 23.587
+        },
+        "Bravo": {
+            "manager": "Tracy Banks",
+            "count": 7158,
+            "percentage": 23.015
+        },
+        "Charlie": {
+            "manager": "Alisha Cordwell",
+            "count": 7021,
+            "percentage": 22.574
+        }
+    },
+    "temporal_trends": {
+        "yearly_growth": {
+            "2018": 9.1,
+            "2019": 0.5,
+            "2020": -4.2
+        },
+        "monthly_seasonality": {
+            "peak_months": [
+                "August",
+                "February",
+                "March"
+            ],
+            "trough_months": [
+                "April",
+                "January",
+                "May",
+                "October"
+            ]
+        }
+    },
+    "geospatial_analysis": {
+        "top_cities": {
+            "Springe": {
+                "total_sales": 20065849.0,
+                "unique_customers": 1
+            },
+            "Lohmar": {
+                "total_sales": 17395409.0,
+                "unique_customers": 1
+            },
+            "Sindelfingen": {
+                "total_sales": 16364303.0,
+                "unique_customers": 1
+            },
+            "Frankenthal": {
+                "total_sales": 15379999.0,
+                "unique_customers": 1
+            },
+            "Frankfurt (Oder)": {
+                "total_sales": 14962030.0,
+                "unique_customers": 1
+            },
+            "Westerstede": {
+                "total_sales": 14730425.0,
+                "unique_customers": 1
+            },
+            "Gelsenkirchen": {
+                "total_sales": 14620640.0,
+                "unique_customers": 1
+            },
+            "Leer": {
+                "total_sales": 14357502.0,
+                "unique_customers": 1
+            },
+            "Kirchheim unter Teck": {
+                "total_sales": 13488995.0,
+                "unique_customers": 1
+            },
+            "Friedberg": {
+                "total_sales": 13179271.0,
+                "unique_customers": 2
+            }
+        },
+        "geo_clusters": [
+            {
+                "latitude_range": "47.5-54.8",
+                "longitude_range": "6.1-15.0",
+                "point_count": 31102
+            }
+        ]
+    },
+    "product_analysis": {
+        "top_products": {
+            "Nevanide Actozide": {
+                "total_sales": 92048067.0,
+                "units_sold": 119079.0,
+                "avg_price": 773.0
+            },
+            "Cephozumab Synmethate": {
+                "total_sales": 89170176.0,
+                "units_sold": 116107.0,
+                "avg_price": 768.0
+            },
+            "Antilamin Clinbital": {
+                "total_sales": 85514568.0,
+                "units_sold": 128787.0,
+                "avg_price": 664.0
+            },
+            "Pulmofine": {
+                "total_sales": 75108272.0,
+                "units_sold": 109169.0,
+                "avg_price": 688.0
+            },
+            "Pentastrin": {
+                "total_sales": 73436223.0,
+                "units_sold": 147759.0,
+                "avg_price": 497.0
+            },
+            "Aspinavir Silovance": {
+                "total_sales": 73198170.0,
+                "units_sold": 133330.0,
+                "avg_price": 549.0
+            },
+            "Abatatriptan": {
+                "total_sales": 72318288.0,
+                "units_sold": 97464.0,
+                "avg_price": 742.0
+            },
+            "Eproline": {
+                "total_sales": 67669680.0,
+                "units_sold": 86756.0,
+                "avg_price": 780.0
+            },
+            "Thalilamide": {
+                "total_sales": 66674532.813769996,
+                "units_sold": 108413.8744939,
+                "avg_price": 615.0
+            },
+            "Choriotrisin": {
+                "total_sales": 63692638.3419,
+                "units_sold": 107770.961661,
+                "avg_price": 591.0
+            }
+        },
+        "price_elasticity": {
+            "cluster_definitions": {
+                "0": {
+                    "avg_quantity": 106.2609727342744,
+                    "avg_price": 420.2857970641257,
+                    "count": 31064
+                },
+                "1": {
+                    "avg_quantity": 15841.315789473685,
+                    "avg_price": 437.05263157894734,
+                    "count": 38
+                }
+            },
+            "sensitivity_labels": {
+                "0": "Price Sensitive",
+                "1": "Value Focused"
+            }
+        }
+    }
+}
