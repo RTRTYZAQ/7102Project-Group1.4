@@ -401,15 +401,15 @@
             "feature_dimension": 5
         },
         "model_performance": {
-            "r2_score": 0.391,
-            "mae": 1.86
+            "r2_score": 0.382,
+            "mse": 6.21
         },
         "top_features": {
-            "sentiment": 0.341,
-            "review_length": 0.247,
-            "usefulCount": 0.204,
-            "month": 0.113,
-            "year": 0.094
+            "sentiment": 0.346,
+            "review_length": 0.242,
+            "usefulCount": 0.206,
+            "month": 0.109,
+            "year": 0.097
         }
     }
 }

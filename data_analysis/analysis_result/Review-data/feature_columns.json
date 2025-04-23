@@ -1,0 +1,1 @@
+{"feature_columns": ["usefulCount", "review_length", "year", "month", "sentiment"]}
