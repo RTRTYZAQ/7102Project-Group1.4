@@ -468,6 +468,18 @@
                 "Sales Team_Alfa": -315.75,
                 "Sales Team_Charlie": -1400.235
             }
+        },
+        "top_influential_features": {
+            "Month_November": 3325.124,
+            "Sales Team_Bravo": 1779.094,
+            "Sales Team_Charlie": -1400.235,
+            "Month_September": -1342.279,
+            "Month_December": -1304.169,
+            "Month_June": -1131.971,
+            "Month_October": 986.342,
+            "Month_August": 583.886,
+            "Month_March": -522.017,
+            "Quantity": 426.199
         }
     },
     "clustering_analysis": {

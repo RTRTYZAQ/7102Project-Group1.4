@@ -468,6 +468,18 @@
                 "Sales Team_Bravo": -1579.087,
                 "Sales Team_Alfa": -1660.093
             }
+        },
+        "top_influential_features": {
+            "Month_June": 2575.54,
+            "Sub-channel_Government": -2405.622,
+            "Month_April": -2132.704,
+            "Sub-channel_Retail": 2028.818,
+            "Month_August": 1921.92,
+            "Sales Team_Charlie": 1776.411,
+            "Sales Team_Alfa": -1660.093,
+            "Sub-channel_Private": 1598.864,
+            "Sales Team_Bravo": -1579.087,
+            "Sales Team_Delta": 1462.769
         }
     },
     "clustering_analysis": {

@@ -1,0 +1,415 @@
+{
+    "numeric_distribution": {
+        "rating": {
+            "mean": 6.99,
+            "median": 8.0,
+            "std": 3.27,
+            "min": 1,
+            "max": 10,
+            "skewness": -0.8,
+            "outliers": 0
+        },
+        "usefulCount": {
+            "mean": 28.0,
+            "median": 16.0,
+            "std": 36.4,
+            "min": 0,
+            "max": 1291,
+            "skewness": 4.67,
+            "outliers": 1607
+        }
+    },
+    "categorical_distribution": {
+        "drugName": {
+            "unique_count": 3436,
+            "top_5": {
+                "Levonorgestrel": 3657,
+                "Etonogestrel": 3336,
+                "Ethinyl estradiol / norethindrone": 2850,
+                "Nexplanon": 2156,
+                "Ethinyl estradiol / norgestimate": 2117
+            }
+        },
+        "condition": {
+            "unique_count": 884,
+            "top_5": {
+                "Birth Control": 28788,
+                "Depression": 9069,
+                "Pain": 6145,
+                "Anxiety": 5904,
+                "Acne": 5588
+            }
+        },
+        "Product Class": {
+            "unique_count": 6,
+            "all_values_except_else": {
+                "Analgesics": 16390,
+                "Mood Stabilizers": 15342,
+                "Antibiotics": 10124,
+                "Antiseptics": 3580,
+                "Antimalarial": 249,
+                "Antipiretics": 112
+            }
+        }
+    },
+    "temporal_distribution": {
+        "time_span": "2008-02-24 ~ 2017-12-12",
+        "records_by_year": {
+            "2016": 34842,
+            "2017": 28087,
+            "2015": 27164,
+            "2013": 12278,
+            "2014": 12051,
+            "2011": 11682,
+            "2009": 11636,
+            "2012": 10007,
+            "2010": 8413,
+            "2008": 5137
+        },
+        "records_by_month": {
+            "August": 14554,
+            "October": 14038,
+            "March": 13956,
+            "November": 13875,
+            "July": 13852,
+            "April": 13736,
+            "January": 13657,
+            "September": 13475,
+            "May": 13345,
+            "June": 12749,
+            "February": 12041,
+            "December": 12019
+        }
+    },
+    "drug_rating_analysis": {
+        "drug_rating_stats": {
+            "global_summary": {
+                "highest_avg": 10.0,
+                "lowest_avg": 1.0,
+                "total_drugs": 3436,
+                "total_reviews": 161297
+            },
+            "drug_rating_count_top10": {
+                "Levonorgestrel": {
+                    "avg_rating": 7.391030899644518,
+                    "review_count": 3657,
+                    "median_rating": 9.0
+                },
+                "Etonogestrel": {
+                    "avg_rating": 5.802458033573141,
+                    "review_count": 3336,
+                    "median_rating": 6.0
+                },
+                "Ethinyl estradiol / norethindrone": {
+                    "avg_rating": 5.5919298245614035,
+                    "review_count": 2850,
+                    "median_rating": 6.0
+                },
+                "Nexplanon": {
+                    "avg_rating": 5.6730055658627085,
+                    "review_count": 2156,
+                    "median_rating": 6.0
+                },
+                "Ethinyl estradiol / norgestimate": {
+                    "avg_rating": 5.856872933396316,
+                    "review_count": 2117,
+                    "median_rating": 7.0
+                },
+                "Ethinyl estradiol / levonorgestrel": {
+                    "avg_rating": 5.799258474576271,
+                    "review_count": 1888,
+                    "median_rating": 6.0
+                },
+                "Phentermine": {
+                    "avg_rating": 8.786130913804277,
+                    "review_count": 1543,
+                    "median_rating": 10.0
+                },
+                "Sertraline": {
+                    "avg_rating": 7.497794117647059,
+                    "review_count": 1360,
+                    "median_rating": 9.0
+                },
+                "Escitalopram": {
+                    "avg_rating": 7.843653250773994,
+                    "review_count": 1292,
+                    "median_rating": 9.0
+                },
+                "Mirena": {
+                    "avg_rating": 6.587761674718196,
+                    "review_count": 1242,
+                    "median_rating": 8.0
+                }
+            }
+        },
+        "usefulcount_analysis": {
+            "correlation_coefficient": 0.234,
+            "rating_segment_analysis": {
+                "0-5": {
+                    "avg_usefulCount": 16.21429462651805,
+                    "record_count": 48088
+                },
+                "5-7": {
+                    "avg_usefulCount": 21.899803785049688,
+                    "record_count": 15799
+                },
+                "7-10": {
+                    "avg_usefulCount": 34.81547069089416,
+                    "record_count": 97410
+                }
+            },
+            "extreme_cases": {
+                "high_rating_low_useful": 5197,
+                "low_rating_high_useful": 1952
+            }
+        },
+        "extreme_rating_drugs": {
+            "top_high_rating": {
+                "A + D Cracked Skin Relief": 10.0,
+                "A / B Otic": 10.0,
+                "Absorbine Jr.": 10.0,
+                "Accolate": 10.0,
+                "Acetaminophen / caffeine / magnesium salicylate": 10.0
+            },
+            "top_low_rating": {
+                "Acarbose": 1.0,
+                "Adempas": 1.0,
+                "Aller-Ease": 1.0,
+                "Alogliptin / metformin": 1.0,
+                "Amethyst": 1.0
+            },
+            "controversial_drugs": {
+                "Absorica": 6.363961030678928,
+                "Acetaminophen / dexbrompheniramine / pseudoephedrine": 6.363961030678928,
+                "Alamast": 6.363961030678928,
+                "Amikacin": 6.363961030678928,
+                "Biotene Mouthwash": 6.363961030678928
+            }
+        }
+    },
+    "condition_analysis": {
+        "condition_frequency": {
+            "Birth Control": {
+                "total_reviews": 28788,
+                "avg_rating": 6.09,
+                "related_drugs_count": 172,
+                "top_drugs": {
+                    "Etonogestrel": 3314,
+                    "Ethinyl estradiol / norethindrone": 2337,
+                    "Nexplanon": 2149
+                }
+            },
+            "Depression": {
+                "total_reviews": 9069,
+                "avg_rating": 7.1,
+                "related_drugs_count": 105,
+                "top_drugs": {
+                    "Bupropion": 549,
+                    "Sertraline": 459,
+                    "Venlafaxine": 437
+                }
+            },
+            "Pain": {
+                "total_reviews": 6145,
+                "avg_rating": 7.63,
+                "related_drugs_count": 200,
+                "top_drugs": {
+                    "Tramadol": 357,
+                    "Acetaminophen / hydrocodone": 332,
+                    "Oxycodone": 281
+                }
+            },
+            "Anxiety": {
+                "total_reviews": 5904,
+                "avg_rating": 7.69,
+                "related_drugs_count": 78,
+                "top_drugs": {
+                    "Escitalopram": 484,
+                    "Alprazolam": 428,
+                    "Buspirone": 407
+                }
+            },
+            "Acne": {
+                "total_reviews": 5588,
+                "avg_rating": 7.37,
+                "related_drugs_count": 117,
+                "top_drugs": {
+                    "Isotretinoin": 517,
+                    "Adapalene / benzoyl peroxide": 397,
+                    "Epiduo": 394
+                }
+            },
+            "Bipolar Disorde": {
+                "total_reviews": 4224,
+                "avg_rating": 7.15,
+                "related_drugs_count": 80,
+                "top_drugs": {
+                    "Lamotrigine": 406,
+                    "Lamictal": 300,
+                    "Quetiapine": 294
+                }
+            },
+            "Insomnia": {
+                "total_reviews": 3673,
+                "avg_rating": 6.72,
+                "related_drugs_count": 78,
+                "top_drugs": {
+                    "Zolpidem": 477,
+                    "Trazodone": 382,
+                    "Ambien": 286
+                }
+            },
+            "Weight Loss": {
+                "total_reviews": 3609,
+                "avg_rating": 8.05,
+                "related_drugs_count": 21,
+                "top_drugs": {
+                    "Phentermine": 1211,
+                    "Lorcaserin": 387,
+                    "Belviq": 381
+                }
+            },
+            "Obesity": {
+                "total_reviews": 3568,
+                "avg_rating": 7.74,
+                "related_drugs_count": 38,
+                "top_drugs": {
+                    "Bupropion / naltrexone": 678,
+                    "Contrave": 649,
+                    "Liraglutide": 312
+                }
+            },
+            "ADHD": {
+                "total_reviews": 3383,
+                "avg_rating": 7.35,
+                "related_drugs_count": 55,
+                "top_drugs": {
+                    "Lisdexamfetamine": 407,
+                    "Vyvanse": 392,
+                    "Methylphenidate": 388
+                }
+            }
+        },
+        "condition_associations": {
+            "most_common_pairs": {
+                "Abnormal Uterine Bleeding & Birth Control": 68,
+                "Depression & Major Depressive Disorde": 47,
+                "Chronic Pain & Pain": 47,
+                "Birth Control & Endometriosis": 46,
+                "Abnormal Uterine Bleeding & Endometriosis": 43,
+                "Osteoarthritis & Rheumatoid Arthritis": 38,
+                "Bipolar Disorde & Depression": 33,
+                "Birth Control & Polycystic Ovary Syndrome": 32,
+                "Osteoarthritis & Pain": 31,
+                "Pain & Rheumatoid Arthritis": 31,
+                "Anxiety & Depression": 31,
+                "Depression & Not Listed / Othe": 30,
+                "Back Pain & Pain": 29,
+                "Bronchitis & Sinusitis": 29,
+                "Acne & Birth Control": 29
+            },
+            "multi_condition_drugs": 1617
+        },
+        "condition_rating_extremes": {
+            "highest_rated": {
+                "Diarrhea, Acute": {
+                    "mean": 10.0,
+                    "count": 11,
+                    "std": 0.0
+                },
+                "Meniere's Disease": {
+                    "mean": 9.75,
+                    "count": 20,
+                    "std": 0.5501196042201808
+                },
+                "Burns, External": {
+                    "mean": 9.702127659574469,
+                    "count": 47,
+                    "std": 1.2320871937139712
+                },
+                "mance Anxiety": {
+                    "mean": 9.67379679144385,
+                    "count": 187,
+                    "std": 0.7797904470304651
+                },
+                "Opioid Overdose": {
+                    "mean": 9.6,
+                    "count": 10,
+                    "std": 0.9660917830792959
+                }
+            },
+            "lowest_rated": {
+                "Influenza Prophylaxis": {
+                    "mean": 3.566666666666667,
+                    "count": 30,
+                    "std": 3.3185303491396487
+                },
+                "Pneumococcal Disease Prophylaxis": {
+                    "mean": 3.6666666666666665,
+                    "count": 24,
+                    "std": 2.987898296777194
+                },
+                "Premenstrual Syndrome": {
+                    "mean": 3.9166666666666665,
+                    "count": 12,
+                    "std": 3.287948609787881
+                },
+                "Vaginal Yeast Infection": {
+                    "mean": 4.082233948988566,
+                    "count": 2274,
+                    "std": 3.5135099858100265
+                },
+                "Bronchiectasis": {
+                    "mean": 4.3076923076923075,
+                    "count": 13,
+                    "std": 3.816294349772114
+                }
+            },
+            "most_controversial": {
+                "mulation) (phenylephrine)": {
+                    "mean": 6.0,
+                    "count": 12,
+                    "std": 4.431293675255978
+                },
+                "Light Anesthesia": {
+                    "mean": 5.214285714285714,
+                    "count": 28,
+                    "std": 4.399975949910222
+                },
+                "Thyroid Cance": {
+                    "mean": 6.3,
+                    "count": 10,
+                    "std": 4.24394994210713
+                },
+                "Expectoration": {
+                    "mean": 6.785714285714286,
+                    "count": 14,
+                    "std": 4.209486930705477
+                },
+                "Vitamin D Deficiency": {
+                    "mean": 6.157894736842105,
+                    "count": 19,
+                    "std": 4.166842101569869
+                }
+            }
+        }
+    },
+    "rating_prediction": {
+        "data_stats": {
+            "original_samples": 161297,
+            "cleaned_samples": 45610,
+            "feature_dimension": 5
+        },
+        "model_performance": {
+            "r2_score": 0.391,
+            "mae": 1.86
+        },
+        "top_features": {
+            "sentiment": 0.341,
+            "review_length": 0.247,
+            "usefulCount": 0.204,
+            "month": 0.113,
+            "year": 0.094
+        }
+    }
+}

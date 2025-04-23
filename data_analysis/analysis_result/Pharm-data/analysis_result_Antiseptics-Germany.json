@@ -468,6 +468,18 @@
                 "Sales Team_Alfa": -401.609,
                 "Sales Team_Charlie": -2152.563
             }
+        },
+        "top_influential_features": {
+            "Month_August": -3111.015,
+            "Month_April": -2981.423,
+            "Sub-channel_Retail": -2654.222,
+            "Sub-channel_Institution": 2431.929,
+            "Month_November": 2170.509,
+            "Sales Team_Charlie": -2152.563,
+            "Month_February": 2091.187,
+            "Month_October": 2057.606,
+            "Sales Team_Delta": 1962.204,
+            "Month_January": -1898.217
         }
     },
     "clustering_analysis": {
