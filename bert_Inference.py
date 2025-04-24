@@ -204,15 +204,15 @@ def Bert_Inference(task='class_prediction', model_path='drug_class_prediction_be
 
 #示例：
 
-##class prediction单个drug name：
-print(Bert_Inference(task='class_prediction', model_path='drug_class_prediction_best_model.pth', x='Sertraline'))
-
-##class prediction多个drug name：
-print(Bert_Inference(task='class_prediction', model_path='drug_class_prediction_best_model.pth', x=['Sertraline', 'Mobic', 'Azithromycin']))
-
-
-##rating prediction单个review：
-print(Bert_Inference(task='rating_prediction', model_path='rating_cross_attention_best_model.pth', x=[['It has no side effect, I take it in combination of Bystolic 5 Mg and Fish Oil'], [27]]))
-
-##rating prediction多个review：
-print(Bert_Inference(task='rating_prediction', model_path='rating_cross_attention_best_model.pth', x=[['It has no side effect, I take it in combination of Bystolic 5 Mg and Fish Oil', "Abilify changed my life. There is hope. I was on Zoloft and Clonidine when I first started Abilify at the age of 15.. Zoloft for depression and Clondine to manage my complete rage. My moods were out of control. I was depressed and hopeless one second and then mean, irrational, and full of rage the next. My Dr. prescribed me 2mg of Abilify and from that point on I feel like I have been cured though I know I&#039;m not.. Bi-polar disorder is a constant battle. I know Abilify works for me because I have tried to get off it and lost complete control over my emotions. Went back on it and I was golden again.  I am on 5mg 2x daily. I am now 21 and better than I have ever been in the past. Only side effect is I like to eat a lot.", "He pulled out, but he cummed a bit in me. I took the Plan B 26 hours later, and took a pregnancy test two weeks later - - I&#039;m pregnant."], [27, 32, 5]]))
+# ##class prediction单个drug name：
+# print(Bert_Inference(task='class_prediction', model_path='drug_class_prediction_best_model.pth', x='Sertraline'))
+#
+# ##class prediction多个drug name：
+# print(Bert_Inference(task='class_prediction', model_path='drug_class_prediction_best_model.pth', x=['Sertraline', 'Mobic', 'Azithromycin']))
+#
+#
+# ##rating prediction单个review：
+# print(Bert_Inference(task='rating_prediction', model_path='rating_cross_attention_best_model.pth', x=[['It has no side effect, I take it in combination of Bystolic 5 Mg and Fish Oil'], [27]]))
+#
+# ##rating prediction多个review：
+# print(Bert_Inference(task='rating_prediction', model_path='rating_cross_attention_best_model.pth', x=[['It has no side effect, I take it in combination of Bystolic 5 Mg and Fish Oil', "Abilify changed my life. There is hope. I was on Zoloft and Clonidine when I first started Abilify at the age of 15.. Zoloft for depression and Clondine to manage my complete rage. My moods were out of control. I was depressed and hopeless one second and then mean, irrational, and full of rage the next. My Dr. prescribed me 2mg of Abilify and from that point on I feel like I have been cured though I know I&#039;m not.. Bi-polar disorder is a constant battle. I know Abilify works for me because I have tried to get off it and lost complete control over my emotions. Went back on it and I was golden again.  I am on 5mg 2x daily. I am now 21 and better than I have ever been in the past. Only side effect is I like to eat a lot.", "He pulled out, but he cummed a bit in me. I took the Plan B 26 hours later, and took a pregnancy test two weeks later - - I&#039;m pregnant."], [27, 32, 5]]))

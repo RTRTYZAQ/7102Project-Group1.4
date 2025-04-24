@@ -9,7 +9,9 @@ from zhipuai import ZhipuAI
 from bert_Inference import Bert_Inference
 
 # Initialize ZhipuAI client
-client = ZhipuAI(api_key="04c2e3e77614447f88083749a02e91c7.agrCgPanJ3kl4zg6")
+client = ZhipuAI(api_key="个人APIKEY")
+sales_knowledge_id  = "药品销售数据分析结果的知识库ID"
+concept_knowledge_id = "药品本身相关的知识库ID"
 
 # Function to classify pharmacy
 def classify_commodity(commodity_name):
@@ -42,7 +44,7 @@ def generate_suggestions(messages, commodity_name, category):
                 "top_10_distributor_performance": analysis_result["top_10_distributor_performance"],
                 "team_performance": analysis_result["team_performance"],
                 "channel_performance": analysis_result["channel_performance"],
-                "Pharmacy": analysis_result["Pharmacy"],
+                "Pharmacy": analysis_result["channel_performance"]["Pharmacy"],
                 "price_sensitivity": analysis_result["price_sensitivity"],
                 "sales_rep_distribution": analysis_result["sales_rep_distribution"],
                 "average_transaction_value": analysis_result["average_transaction_value"],
@@ -75,6 +77,15 @@ def generate_suggestions(messages, commodity_name, category):
             {"role": "user",
              "content": f"Here are the facts for Germany: {known_facts_dict['Germany']}\n\nHere are the facts for Poland: {known_facts_dict['Poland']}"}
         ],
+        tools=[
+            {
+                "type": "retrieval",
+                "retrieval": {
+                    "knowledge_id": sales_knowledge_id,
+                    "prompt_template": "Search from\n\"\"\"\n{{知识}}\n\"\"\"\n to figure out the relevant knowledge of \n\"\"\"\n{{用户输入/对话}}\n\"\"\"\n，you shall form your response with respect to the knowledge you found, if you cannot find out any knowledge from the document(or the document is empty), you shall answer the question by your own proffesional ability. Please cite if you use any knowledge from document, \n Do not repeat question，Answer the question directly in English."
+                }
+            }
+            ],
     )
     sales_analysis = response.choices[0].message.content
 
@@ -105,6 +116,15 @@ def send_message(chat_history, message):
     response = client.chat.completions.create(
         model="glm-4-flash-250414",
         messages=messages,
+        tools=[
+            {
+                "type": "retrieval",
+                "retrieval": {
+                    "knowledge_id": sales_knowledge_id,
+                    "prompt_template": "从文档\n\"\"\"\n{{knowledge}}\n\"\"\"\n中找问题\n\"\"\"\n{{question}}\n\"\"\"\n的答案，找到答案就仅使用文档语句回答问题，找不到答案就用自身知识回答并且告诉用户该信息不是来自文档。\n不要复述问题，使用英语直接开始回答。"
+                }
+            }
+        ],
     )
     messages.append({
         "role": "assistant",
