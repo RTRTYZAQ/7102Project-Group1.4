@@ -401,15 +401,54 @@
             "feature_dimension": 5
         },
         "model_performance": {
-            "r2_score": 0.382,
-            "mse": 6.21
+            "r2_score": 0.367,
+            "mse": 6.38
         },
         "top_features": {
-            "sentiment": 0.346,
-            "review_length": 0.242,
-            "usefulCount": 0.206,
-            "month": 0.109,
+            "sentiment": 0.35,
+            "review_length": 0.24,
+            "usefulCount": 0.205,
+            "month": 0.108,
             "year": 0.097
         }
+    },
+    "drug_clustering": {
+        "cluster_1": {
+            "num_drugs": 657,
+            "avg_rating": 7.68,
+            "avg_review_count": 39,
+            "top_conditions": [
+                "Pain",
+                "Bipolar Disorde",
+                "Depression",
+                "Anxiety",
+                "Acne"
+            ]
+        },
+        "cluster_0": {
+            "num_drugs": 55,
+            "avg_rating": 8.04,
+            "avg_review_count": 80,
+            "top_conditions": [
+                "Acne",
+                "Pain",
+                "Depression",
+                "Bipolar Disorde",
+                "Anxiety"
+            ]
+        },
+        "cluster_2": {
+            "num_drugs": 30,
+            "avg_rating": 7.56,
+            "avg_review_count": 514,
+            "top_conditions": [
+                "Depression",
+                "Bipolar Disorde",
+                "Anxiety",
+                "Pain",
+                "Acne"
+            ]
+        },
+        "silhouette_score": 0.51
     }
 }
