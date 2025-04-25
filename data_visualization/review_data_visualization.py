@@ -430,7 +430,7 @@ class ReviewDataVisualization:
 
         # 使用重新排序的数据绘制饼图
         plt.pie(reordered_data['count'], labels=reordered_data['Product Class'], 
-                autopct=my_autopct, startangle=90, shadow=True, 
+                autopct=my_autopct, startangle=90, 
                 explode=[0.05] * len(reordered_data),
                 textprops={'fontsize': 12})
 
