@@ -404,32 +404,39 @@ class ReviewDataVisualization:
         
         # 创建产品类别评论数量饼图
         plt.figure(figsize=(10, 8))
-        
+
         # 计算百分比
         total_count = class_counts['count'].sum()
         percentages = [(count / total_count) * 100 for count in class_counts['count']]
-        
+
+        # 按计数排序数据
         sorted_data = class_counts.sort_values('count', ascending=False).reset_index(drop=True)
 
-        # 交替大小排序
-        alternating_indices_1 = [i for i in range(len(sorted_data)) if i % 2 == 0]
-        alternating_indices_2 = [i for i in range(len(sorted_data)) if i % 2 != 0]
-        reordered_data = sorted_data.iloc[alternating_indices_1 + alternating_indices_2].reset_index(drop=True)
+        # 创建交替的大小排序
+        n = len(sorted_data)
+        alternating_indices = []
+        for i in range(n//2 + n%2):
+            alternating_indices.append(i)  # 添加一个大的
+            if i + (n//2 + n%2) < n:  # 确保不超出索引范围
+                alternating_indices.append(i + (n//2 + n%2))  # 添加一个小的
+
+        # 按照新顺序排列数据
+        reordered_data = sorted_data.iloc[alternating_indices].reset_index(drop=True)
 
         # 创建自定义标签函数
         def my_autopct(pct):
-            index = percentages.index(min(percentages, key=lambda x: abs(x-pct)))
-            val = class_counts['count'].iloc[index]
+            val = int(pct/100.*total_count)
             return f"{pct:.1f}%\n{val:,.0f}"
-        
-        plt.pie(reordered_data['count'], labels=class_counts['Product Class'], 
-                autopct=my_autopct, startangle=90, 
-                explode=[0.05] * len(class_counts),
+
+        # 使用重新排序的数据绘制饼图
+        plt.pie(reordered_data['count'], labels=reordered_data['Product Class'], 
+                autopct=my_autopct, startangle=90, shadow=True, 
+                explode=[0.05] * len(reordered_data),
                 textprops={'fontsize': 12})
-        
+
         plt.axis('equal')  # 确保饼图是圆的
         plt.title("Product Class Distribution")
-        
+
         # 保存图表
         output_path = os.path.join(directory, "product_class_distribution_pie.png")
         plt.savefig(output_path, dpi=300, bbox_inches='tight')
