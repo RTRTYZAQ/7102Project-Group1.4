@@ -409,14 +409,21 @@ class ReviewDataVisualization:
         total_count = class_counts['count'].sum()
         percentages = [(count / total_count) * 100 for count in class_counts['count']]
         
+        sorted_data = class_counts.sort_values('count', ascending=False).reset_index(drop=True)
+
+        # 交替大小排序
+        alternating_indices_1 = [i for i in range(len(sorted_data)) if i % 2 == 0]
+        alternating_indices_2 = [i for i in range(len(sorted_data)) if i % 2 != 0]
+        reordered_data = sorted_data.iloc[alternating_indices_1 + alternating_indices_2].reset_index(drop=True)
+
         # 创建自定义标签函数
         def my_autopct(pct):
             index = percentages.index(min(percentages, key=lambda x: abs(x-pct)))
             val = class_counts['count'].iloc[index]
-            return f"{pct:.1f}%\n({val:,.0f})"
+            return f"{pct:.1f}%\n{val:,.0f}"
         
-        plt.pie(class_counts['count'], labels=class_counts['Product Class'], 
-                autopct=my_autopct, startangle=90, shadow=True, 
+        plt.pie(reordered_data['count'], labels=class_counts['Product Class'], 
+                autopct=my_autopct, startangle=90, 
                 explode=[0.05] * len(class_counts),
                 textprops={'fontsize': 12})
         
